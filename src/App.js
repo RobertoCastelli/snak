@@ -1,16 +1,16 @@
-import React from "react"
-import Footer from "./components/Footer"
-import Grid from "./components/Grid"
-import Score from "./components/Score"
-import Title from "./components/Title"
+import React from 'react'
+import Footer from './components/Footer'
+import Grid from './components/Grid'
+import Score from './components/Score'
+import Header from './components/Header'
 
 const App = () => {
 	return (
 		<div className='container'>
 			<div className='content'>
-				<Title />
-				<Score />
+				<Header />
 				<Grid />
+				<Score />
 			</div>
 			<Footer />
 		</div>

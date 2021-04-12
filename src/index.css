@@ -3,12 +3,53 @@ body {
 	letter-spacing: 0.08rem;
 	color: #333;
 	background-color: #f4f4f4;
+	font-size: 0.8rem;
 	font-family: monospace, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-width: 600px;
+	padding: 0.5rem;
+	margin: auto;
+	text-align: center;
+}
+.content {
+	flex-grow: 1;
+}
+
+.sub-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sub-title div {
+	margin: 0 0.5rem;
+}
+.snake-title {
+	color: green;
+}
+.spinner-title {
+	color: cadetblue;
+}
+
+.rows {
+	display: flex;
+	justify-content: center;
+}
+
+.cells {
+	background-color: rgb(144, 238, 144, 0.3);
+	border: 1px solid rgb(51, 51, 51, 0.1);
+	width: 20px;
+	height: 20px;
 }
