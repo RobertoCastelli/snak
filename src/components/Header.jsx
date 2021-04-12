@@ -12,7 +12,7 @@ const Header = () => {
 	return (
 		<header className='title'>
 			<h1>{TITLE}</h1>
-			<p className='sub-title'>
+			<div className='sub-title'>
 				<div className='snake-title'>
 					<GiSandSnake size={20} />
 				</div>
@@ -20,7 +20,7 @@ const Header = () => {
 				<div className='spinner-title'>
 					<FaReact size={20} />
 				</div>
-			</p>
+			</div>
 		</header>
 	)
 }

@@ -33,7 +33,7 @@ code {
 	align-items: center;
 }
 .sub-title div {
-	margin: 0 0.5rem;
+	margin: 0.5rem;
 }
 .snake-title {
 	color: green;
@@ -48,8 +48,29 @@ code {
 }
 
 .cells {
-	background-color: rgb(144, 238, 144, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	background-color: rgb(144, 238, 144, 0.1);
 	border: 1px solid rgb(51, 51, 51, 0.1);
 	width: 20px;
 	height: 20px;
+}
+
+.bug {
+	color: brown;
+	position: relative;
+	animation: trem 0.5s infinite linear;
+}
+@keyframes trem {
+	0%,
+	100% {
+		left: 0;
+	}
+	50% {
+		left: 1px;
+	}
+}
+.snake {
+	color: green;
 }

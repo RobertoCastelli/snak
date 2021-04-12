@@ -4,7 +4,7 @@ import Grid from './components/Grid'
 import Score from './components/Score'
 import Header from './components/Header'
 
-const App = () => {
+function App() {
 	return (
 		<div className='container'>
 			<div className='content'>
